@@ -38,7 +38,7 @@ const getUserChoice = userInput => {
         if (computerChoice === 'rock') {
           return 'User Paper Covers Computer Rock!'
         } else if (computerChoice === 'scissors') {
-          return 'Computer Rock Crushes User Scissors!'
+          return 'Computer Scissors Cuts User Paper!'
         }
       }
       else if (userChoice === 'scissors') {
@@ -55,7 +55,7 @@ const getUserChoice = userInput => {
   }
 
 function playGame() {
-  const userChoice = getUserChoice('bomb') // user choice goes here. 
+  const userChoice = getUserChoice('Rock') // user choice goes here. 
   const computerChoice = getComputerChoice()
   return determineWinner(userChoice, computerChoice)
 }
